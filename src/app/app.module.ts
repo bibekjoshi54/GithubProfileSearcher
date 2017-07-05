@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
     ProfileComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
