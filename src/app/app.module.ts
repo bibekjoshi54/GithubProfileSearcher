@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {  ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -8,10 +9,10 @@ import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
   ],
   imports: [
-    BrowserModule, HttpModule
+    BrowserModule, HttpModule,   ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,7 +12,7 @@ export class GithubService {
   private username: String;
   constructor(private _http: Http) {
     console.log('GitHub Service Ready');
-    this.username = 'bibekjoshi54';
+    this.username = '';
   }
 
   getUser(){
@@ -25,4 +25,7 @@ export class GithubService {
     .map(res => res.json());
   }
 
+  updateUser(userName : string): void{
+      this.username = userName;
+  }
 }
